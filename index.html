@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Petal Stitch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="./assets/logo-image.jpg" alt="Pure Petal Stitch Logo" class="logo-img">
+            </a>
+
+            <!-- Hamburger Button (mobile pe dikhega) -->
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Nav Menu -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pure Petal Stitch</h1>
+            <p class="tagline">Your trust comes first, and our promises are always delivered on time.</p>
+            <p>Elegant Custom Stitching for Women – Tailored to Perfection Across Pakistan</p>
+            <a href="contact.html" class="cta-button">Customize Your Outfit Now</a>
+        </div>
+    </section>
+
+    <section class="offers">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="offer-slide">
+                    <h2>Eid Special Offer!</h2>
+                    <p>Simple Dress Stitch Only at <strong>1500 PKR</strong> (Delivery Charges Extra)</p>
+                    <a href="contact.html" class="cta-button">Book Now</a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="offer-slide">
+                    <h2>Special Support</h2>
+                    <p><strong>30% Off</strong> for Widow Women – Quality & Affordable Stitching</p>
+                    <a href="contact.html" class="cta-button">Claim Offer</a>
+                </div> 
+            </div>
+
+            <div class="mySlides fade">
+                <div class="offer-slide">
+                    <h2>Fast & Convenient</h2>
+                    <p>Book Now! Send Clothes to Shop – Delivered in <strong>7 Days</strong> at Your Home</p>
+                    <a href="contact.html" class="cta-button">Order Today</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Our Featured Designs</h2>
+        <div class="featured-grid">
+            <div class="featured-item">
+                <img src="./assets/design-1.jpg" loading="lazy" alt="Mint Green Embroidered Suit">
+                <p>Daily Wear – Fresh & Comfortable</p>
+            </div>
+
+            <div class="featured-item">
+                <img src="./assets/design-2.jpg" loading="lazy" alt="Lavender Net Suit">
+                <p>Modern Fusion – Elegant & Stylish</p>
+            </div>
+
+            <div class="featured-item">
+                <img src="./assets/design-3.jpg" loading="lazy" alt="Beige Gold Traditional Suit">
+                <p>Festive Wear – Luxurious Detailing</p>
+            </div>
+
+            <div class="featured-item">
+                <img src="./assets/design-4.jpg" loading="lazy" alt="Pink Anarkali Party Wear">
+                <p>Party Wear – Grand & Graceful</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+    <h2>About Pure Petal Stitch</h2>
+    
+    <div class="about-content">
+        <p class="intro">
+            We provide ladies’ stitching services at very <strong>affordable prices</strong> without compromising on <strong>quality</strong> and <strong>style</strong>.
+        </p>
+        
+        <p>
+            From daily wear dresses to party wear and traditional outfits, every dress is stitched with <strong>neat finishing</strong>, <strong>proper fitting</strong>, and <strong>attention to detail</strong>.
+        </p>
+        
+        <ul class="about-features">
+            <li>Custom designs are welcome — bring your own design or choose from our available styles</li>
+            <li>Send your clothes to the provided address and receive your beautifully stitched dress within <strong>7 days</strong></li>
+            <li>Fast delivery, reasonable rates, and friendly service make it easy for every woman to get stylish clothes within budget</li>
+            <li>Perfect for casual wear, office wear, events, and special occasions</li>
+        </ul>
+        
+        <p class="closing">
+            Pure Petal Stitch – where elegance meets affordability, delivered with care.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Gujrat, Punjab | Pakistan-wide Delivery Available</p>
+            <p>Contact us for custom orders & measurements</p>
+            <div class="social-icons">
+                <a href="https://wa.me/923279361407" class="social-icon whatsapp" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/purepetalstitch/" class="social-icon instagram" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/purepetalstitch" class="social-icon facebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@pure.petal.stitch?_r=1&_t=ZS-93oNQ6glsJx" class="social-icon tiktok" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Pure Petal Stitch. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Pure Petal Stitch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="./assets/logo-image.jpg" alt="Pure Petal Stitch Logo" class="logo-img">
+            </a>
+
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p class="tagline">Your Dream Outfit Is Just a Message Away</p>
+            <p>Share your design, measurements, or questions – we're here to help!</p>
+            <a href="https://wa.me/923279361407" class="cta-button whatsapp-big" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+
+            <!-- Size Guide Chart -->
+            <div class="size-guide">
+                <h2>Size Guide</h2>
+                <p>Use the chart below to find your size. If you're unsure, send us your exact measurements via WhatsApp – we'll help ensure the perfect fit!</p>
+
+                <div class="chart-wrapper">
+                    <table class="size-chart">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Bust (Inch)</th>
+                                <th>Waist (Inch)</th>
+                                <th>Hip (Inch)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>XXS</td><td>32</td><td>29</td><td>35</td></tr>
+                            <tr><td>XS</td><td>34</td><td>31</td><td>37</td></tr>
+                            <tr><td>S</td><td>36</td><td>33</td><td>39</td></tr>
+                            <tr><td>M</td><td>38</td><td>35</td><td>41</td></tr>
+                            <tr><td>L</td><td>40</td><td>37</td><td>43</td></tr>
+                            <tr><td>XL</td><td>42</td><td>39</td><td>45</td></tr>
+                            <tr><td>XXL</td><td>44</td><td>41</td><td>47</td></tr>
+                            <tr><td>3XL</td><td>46</td><td>43</td><td>49</td></tr>
+                            <tr><td>4XL</td><td>48</td><td>45</td><td>51</td></tr>
+                            <tr><td>5XL</td><td>50</td><td>47</td><td>53</td></tr>
+                            <tr><td>6XL</td><td>52</td><td>49</td><td>55</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="how-to-measure">
+                        <h3>How to Measure Yourself</h3>
+                        <ul>
+                            <li><strong>Bust:</strong> Place the tape around the fullest part of your chest horizontally.</li>
+                            <li><strong>Waist:</strong> Place the tape around your natural waist (narrowest part).</li>
+                            <li><strong>Hip:</strong> Place the tape around the widest part of your hips.</li>
+                        </ul>
+                        <p><strong>Note:</strong> This is a standard chart. For custom fitting or if your body shape varies, please send your exact measurements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Fastest way to share designs & get quotes</p>
+                    <a href="https://wa.me/923279361407" 
+                       class="contact-link" target="_blank">
+                        +92 327 9361407
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>Mon-Sat: 10 AM – 8 PM</p>
+                    <a href="tel:+923279361407" class="contact-link">
+                        +92 327 9361407
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Gujrat, Punjab, Pakistan</p>
+                    <p>Pakistan-wide delivery available</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="https://formspree.io/f/xbdaojaa" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
+                    <input type="email" name="email" placeholder="Your Email (optional)">
+                    <textarea name="message" placeholder="Your Message / Design Details" rows="6" required></textarea>
+
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <p class="form-note">We'll reply within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Gujrat, Punjab | Pakistan-wide Delivery Available</p>
+                <p>Contact us for custom orders & measurements</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/923279361407" class="social-icon whatsapp" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/purepetalstitch/" class="social-icon instagram" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/purepetalstitch" class="social-icon facebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@pure.petal.stitch?_r=1&_t=ZS-93oNQ6glsJx" class="social-icon tiktok" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pure Petal Stitch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</script>
+</body>
+</html>
