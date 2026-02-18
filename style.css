@@ -1476,3 +1476,102 @@ footer{
 .whatsapp-big:hover{
     background-color: #128c7e;
 }
+
+.latest-designs{
+    padding: 60px 20px;
+    text-align: center;
+    background: #fffaf5;
+}
+
+.latest-designs h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-text);
+    font-weight: 700;
+    position: relative;
+}
+
+.latest-designs h2::after{
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: var(--primary-pink);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.designs-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.design-item{
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 80px 20px rgba(255, 159, 181, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.design-item:hover{
+    transform: translateY(-10px);
+}
+
+.design-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.price-info{
+    padding: 20px 15px 10px;
+    background: rgba(255, 159, 181, 0.05);
+}
+
+.price-kid{
+    font-size: 1.4rem;
+    color: var(--primary-pink);
+    font-weight: 600;
+    margin: 0;
+}
+
+.price-adult{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    margin: 0;
+}
+
+.size-note{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 25px;
+    padding: 10px 25px;
+    background: white;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.designs-info{
+    margin-top: 50px;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.design-item:nth-child(2) img{
+    object-position: bottom;
+    max-height: 820px;
+    object-fit: cover;
+}
